@@ -34,7 +34,15 @@
         align-items: center;
     }
 }
-& .projects__card:hover{
+.projects__card:hover, .projects__card:focus{
+    & .back{
+        transform: rotateY(0);
+    }
+    & .front{
+        transform: rotateY(-180deg);
+    }
+}
+.projects__card:has(.links__a:focus){
     & .back{
         transform: rotateY(0);
     }
@@ -42,6 +50,7 @@
         transform: rotateY(-180deg);
     } 
 }
+
 & .front::after{
     content: "";
     position: absolute;

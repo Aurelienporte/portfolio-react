@@ -33,7 +33,7 @@ function Card({
   subtitle,
 }) {
   return (
-    <li className="projects__card">
+    <li className="projects__card" tabIndex={0}>
       <div
         className="back"
         style={{

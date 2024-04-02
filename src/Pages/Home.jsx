@@ -9,12 +9,14 @@ import "./home.css";
 import skills from "../assets/skills.json";
 import codePen from "../assets/codepen.js";
 import projects from "../assets/projects.js";
-console.log(codePen);
+import Headroom from "react-headroom";
 
 function Home() {
   return (
     <>
-      <Header></Header>
+      <Headroom style={{ zIndex: "10" }} upTolerance={15}>
+        <Header></Header>
+      </Headroom>
       <main>
         <section id="presentation">
           <h2 className="presentation__title">
