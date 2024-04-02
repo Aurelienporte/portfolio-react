@@ -1,0 +1,68 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  --salienceColor : rgb(41, 204, 210);
+}
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  transition: color 300ms ease;
+
+  &:hover{
+      color: var(--salienceColor);
+  }
+}
+
+button{
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+h1, h2{
+  font-family: "Exo", sans-serif;
+}
+h1{
+  font-size: 2rem;
+}
+main{
+  margin: 64px 0 24px;
+  display: flex;
+  flex-flow: column;
+  gap: 60px;
+}
+section{
+
+  padding: 0 24px;
+}
+
+/***** DESKTOP *****//***** DESKTOP *****//***** DESKTOP *****//***** DESKTOP *****/
+
+@media screen and (min-width: 1024px) {
+  main{
+      margin: 64px 0 48px;
+  }
+  section{
+      padding: 0 48px;
+  }
+} 
+
+/***** TABLET *****//***** TABLET *****//***** TABLET *****//***** TABLET *****//***** TABLET *****/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header{
+      padding: 0 24px 0 36px;
+  }
+  section{
+      min-height: 50vh;
+      padding: 0 36px;
+  }
+}

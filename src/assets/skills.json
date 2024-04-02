@@ -1,0 +1,46 @@
+[
+    {
+        "name": "HMTL",
+        "level": "advanced"
+    },
+    {
+        "name": "CSS",
+        "level": "advanced"
+    },
+    {
+        "name": "SASS",
+        "level": "confirmed"
+    },
+    {
+        "name": "GSAP",
+        "level": "basics"
+    },
+    {
+        "name": "SEO on-page",
+        "level": "confirmed"
+    },
+    {
+        "name": "Javascript",
+        "level": "advanced"
+    },
+    {
+        "name": "YAML / Swagger",
+        "level": "basics"
+    },
+    {
+        "name": "React",
+        "level": "confirmed"
+    },
+    {
+        "name": "React Router",
+        "level": "confirmed"
+    },
+    {
+        "name": "React Testing Library",
+        "level": "basics"
+    },
+    {
+        "name": "Redux / RTK",
+        "level": "basics"
+    }
+]

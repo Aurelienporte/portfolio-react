@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg14"
+   sodipodiDocname="HTML5_logo_and_wordmark.svg"
+   xmlnsSodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlnsSvg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs18" />
+  <sodipodiNamedview
+     id="namedview16"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     showgrid="false"
+    />
+  <title
+     id="title2">HTML5 Logo</title>
+  <g
+     id="g1420"
+     transform="matrix(1.0000346,0,0,0.99975591,-44.406121,0.12497473)">
+    <path
+       fill="#e44d26"
+       d="M 115.67782,460.96392 74.6,-0.10350757 H 526.20708 L 485.12926,460.71496 300.03011,512"
+       id="path6"
+       style="display:inline;strokeWidth:1.24478" />
+    <path
+       fill="#f16529"
+       d="M 300.40354,472.78935 V 37.737879 H 485.00478 L 449.77744,431.08914"
+       id="path8"
+       style="display:inline;strokeWidth:1.24478" />
+    <path
+       fill="#ebebeb"
+       d="m 158.49834,94.126525 h 141.9052 v 56.513125 h -79.91503 l 5.22808,57.88238 h 74.68695 v 56.38865 h -126.4699 m 2.48957,28.38104 h 56.76208 l 3.9833,45.1856 63.23495,16.92905 v 59.00268 L 184.38981,382.04471"
+       id="path10"
+       style="display:inline;strokeWidth:1.24478" />
+    <path
+       fill="#ffffff"
+       d="M 441.81083,94.126525 H 300.15458 v 56.513125 h 136.42816 m -5.10361,57.88238 H 300.15458 v 56.51313 h 69.70782 l -6.59735,73.44216 -63.11047,16.92905 v 58.75373 l 115.76477,-32.11539"
+       id="path12"
+       style="display:inline;strokeWidth:1.24478" />
+  </g>
+</svg>
