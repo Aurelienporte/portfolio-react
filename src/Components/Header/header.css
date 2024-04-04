@@ -13,6 +13,7 @@ header{
     & .burger{
         display: flex;
         flex-flow: column;
+        align-items: center;
         gap: 6px;
         padding: 12px;
   
@@ -21,17 +22,51 @@ header{
             height: 4px;
             border-radius: 2px;
             background-color: black;
-            transition: background-color 300ms ease;
+            transition: background-color 300ms ease, transform 500ms ease, width 500ms ease;
         }
         &:hover .burger__stripe{
             background-color: var(--salienceColor);
+        }
+        & .x-cross{
+            transition: all 1s ease;
+        }
+        & .x-cross:first-of-type{
+            transform:  translateY(10px) rotate(45deg);
+        }
+        & .x-cross:nth-of-type(2){
+            width: 4px;
+        }
+        & .x-cross:last-of-type{
+            transform: translateY(-10px) rotate(-45deg);
+        }
+    }
+    /***** TABLET *****//***** TABLET *****//***** TABLET *****//***** TABLET *****/
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        padding: 0 24px 0 36px;
+    }
+
+    /***** DESKTOP *****//***** DESKTOP *****//***** DESKTOP *****//***** DESKTOP *****/
+    @media screen and (min-width: 1024px) {
+        padding: 0 36px 0 48px;
+    }
+
+    /****** LARGEDESKTOP *****/
+    @media screen and (min-width: 1700px) {
+        padding: 0 96px;
+        justify-content: center;
+
+        & h1{
+            position: absolute;
+            left: 96px;
+            top: 50%;
+            transform: translateY(-50%);
         }
     }
 }
 .menu{
     position: fixed;
     top: 64px;
-    /* z-index: 1; */
+    z-index: 1;
     transform: translateY(-100%);
     transition: transform 1s ease;
     width: 100%;
@@ -55,7 +90,7 @@ header{
             transition: all 300ms ease;
   
             &:hover{
-                text-decoration: underline 1px;
+                text-decoration: underline 2px;
                 text-underline-offset: 5px;
             }
         }
@@ -69,19 +104,19 @@ header{
 transition: transform 1s ease;
 transform: translateY(0);
 }
+.overlay{
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0,0,0,0.25);
 
-  /***** DESKTOP *****//***** DESKTOP *****//***** DESKTOP *****//***** DESKTOP *****/
-
-@media screen and (min-width: 1024px) {
-    header{
-        padding: 0 36px 0 48px;
-    }
 }
-
-/***** TABLET *****//***** TABLET *****//***** TABLET *****//***** TABLET *****//***** TABLET *****/
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-    header{
-        padding: 0 24px 0 36px;
-    }
+& .overlay--visible{
+    visibility: visible;
+    opacity: 1;
 }

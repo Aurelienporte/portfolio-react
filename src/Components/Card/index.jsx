@@ -29,6 +29,7 @@ function Card({
   links,
   languages,
   cover,
+  position,
   frontTitle,
   subtitle,
 }) {
@@ -64,6 +65,8 @@ function Card({
                 return (
                   <figure key={`${frontTitle}${language}`}>
                     <img
+                      height="30"
+                      aspect-ratio="auto"
                       src={findIcon(language)}
                       alt={`icone ${language}`}
                       className="tools__icon"
@@ -81,7 +84,7 @@ function Card({
       <div
         className="front"
         style={{
-          background: `linear-gradient(rgb(0,0,0,.1), rgb(0,0,0,0.8)), url(${cover}) center left / cover no-repeat, cadetblue`,
+          background: `linear-gradient(rgb(0,0,0,.1), rgb(0,0,0,0.8)), url(${cover}) ${position} / cover no-repeat, cadetblue`,
         }}
       >
         <div className="front__caption foreground">

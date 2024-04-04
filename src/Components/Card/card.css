@@ -1,6 +1,5 @@
-.foreground{
-    transform: translateZ(60px) scale(0.94);
-}
+/****** SMARTPHONE ******//****** SMARTPHONE ******//****** SMARTPHONE ******/
+
 .projects__card{
     position: relative;
     --cardWidth : calc(100vw - 2*24px); 
@@ -130,6 +129,7 @@
         opacity: .87;
     }
     & .text__p{
+        font-size: .9rem;
         text-wrap: pretty;
     }
     & .links{
@@ -147,29 +147,33 @@
 
             &:hover{
                 color: var(--salienceColor);
+                text-decoration-thickness: 2px;
             }
         }
     }
     & .tools__title{
         margin-bottom: 8px;
     }
-    & .tools__icon-container{
-        display: flex;
-        gap: 12px;
-        align-items: center;
-        width: 100%;
+}
+.tools__icon-container{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    width: 100%;
 
-        & .tools__icon{
-            height: 30px;
-            background-color: white;
-        }
-        & .tools__caption{
-            font-size: .75rem;
-            letter-spacing: .4px;
-            font-weight: 300;
-            text-transform: uppercase;
-        }
+    & .tools__icon{
+        height: 30px;
+        background-color: white;
     }
+    & .tools__caption{
+        font-size: .75rem;
+        letter-spacing: .4px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+}
+.foreground{
+    transform: translateZ(60px) scale(0.94);
 }
 
 /* & .front:hover{
@@ -194,7 +198,8 @@
 @media screen and (min-width: 1024px) {
 
     & .projects__card{
-        --cardWidth : calc((100vw - 2*48px - 24px) / 2);
+        /*viewportWidth - padding - gap - srcollbarWidth*/
+        --cardWidth : calc((100vw - 2*48px - 48px - 20px) / 2);
         
         & div:is(.front, .back){
             height: var(--cardWidth);
@@ -202,12 +207,23 @@
     }
 } 
 /**** LARGE DESKTOP ****/
-@media screen  and (min-width: 1280px) {
+@media screen  and (min-width: 1360px) {
 
     & .projects__card{
-        --cardWidth : calc((100vw - 2*48px - 2*24px) / 3);
+        --cardWidth : calc((100vw - 2*48px - 2*96px - 20px) / 3);
+        width: min(var(--cardWidth), 500px);
         & div:is(.front, .back){
-            height: calc(var(--cardWidth) * 1.15);
+            width: min(var(--cardWidth), 500px);
+            height:  min(calc(var(--cardWidth) * 1.25), 550px);
         }
     }
   }
+
+/***** TABLET *****//***** TABLET *****//***** TABLET *****//***** TABLET *****//***** TABLET *****/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .projects__card{
+        /*viewportWidth - padding - gap - srcollbarWidth*/
+        --cardWidth : calc((100vw - 2*36px - 24px - 20px) / 2);  
+    }
+}

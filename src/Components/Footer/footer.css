@@ -5,4 +5,10 @@ footer{
     align-items: center;
     background-color: black;
     color: white;
+
+  /****** DESKTOP *****/
+  @media screen and (min-width: 1024px) {
+    height: 96px;
   }
+  }
+

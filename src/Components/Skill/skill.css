@@ -1,10 +1,15 @@
 .skill{
     position: relative;
 
+    & .skill__title{
+        margin-bottom: 3px;
+        font-size: 1.4rem;
+    }
     & .skill__gauge{
         color: transparent;
-        height: 5px;
+        height: 10px;
         width: 100%;
+        border-radius: 5px 0 0 5px;
         background-image: linear-gradient(to right, black 0%, cadetblue 50%, rgb(41, 204, 210) 100% );
 
         & +p{
@@ -28,7 +33,7 @@
         animation:  800ms ease forwards showConfirmed;
     }
     & .basics{
-        clip-path: polygon(0 0, 35% 0%, 35% 100%, 0 100%);
+        clip-path: polygon(0 0, 40% 0%, 40% 100%, 0 100%);
     }
     &:hover .basics +p{
         animation:  800ms ease forwards showBasics;

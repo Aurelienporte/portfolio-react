@@ -1,13 +1,11 @@
 import "./header.css";
-import { useState } from "react";
 
-function Header() {
-  const [isDisplayed, setIsDisplayed] = useState(false);
-
-  const toogleMenu = () => {
-    isDisplayed ? setIsDisplayed(!isDisplayed) : setIsDisplayed(!isDisplayed);
-  };
-
+function Header({ state, toogleMenu }) {
+  const isDisplayed = state;
+  const overlayHeight = window
+    .getComputedStyle(document.querySelector("body"))
+    .getPropertyValue("height");
+  console.log(overlayHeight);
   return (
     <>
       <header>
@@ -15,15 +13,28 @@ function Header() {
         <button
           type="button"
           id="menubutton"
+          aria-label="navigation"
           aria-haspopup="true"
           aria-controls="menu"
           aria-expanded={isDisplayed ? "true" : "false"}
           className="burger"
           onClick={toogleMenu}
         >
-          <div className="burger__stripe"></div>
-          <div className="burger__stripe"></div>
-          <div className="burger__stripe"></div>
+          <span
+            className={
+              isDisplayed ? "burger__stripe x-cross" : "burger__stripe"
+            }
+          ></span>
+          <span
+            className={
+              isDisplayed ? "burger__stripe x-cross" : "burger__stripe"
+            }
+          ></span>
+          <span
+            className={
+              isDisplayed ? "burger__stripe x-cross" : "burger__stripe"
+            }
+          ></span>
         </button>
       </header>
       <nav
@@ -97,6 +108,11 @@ function Header() {
           </li>
         </ul>
       </nav>
+      <div
+        className={isDisplayed ? "overlay overlay--visible" : "overlay "}
+        style={{ height: `${overlayHeight}` }}
+        onClick={toogleMenu}
+      ></div>
     </>
   );
 }

@@ -24,7 +24,7 @@
         "level": "advanced"
     },
     {
-        "name": "YAML / Swagger",
+        "name": "YAML",
         "level": "basics"
     },
     {
@@ -36,11 +36,11 @@
         "level": "confirmed"
     },
     {
-        "name": "React Testing Library",
+        "name": "Testing Library",
         "level": "basics"
     },
     {
-        "name": "Redux / RTK",
+        "name": "Redux",
         "level": "basics"
     }
 ]
