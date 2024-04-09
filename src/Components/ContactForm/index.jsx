@@ -41,10 +41,11 @@ export const ContactUs = () => {
       className="contactform"
     >
       <div className="contactform__item">
-        <label>
+        <label htmlFor="name">
           Nom <span className="invalid">Champ invalide</span>
         </label>
         <input
+          id="name"
           ref={name}
           type="text"
           name="user_lastname"
@@ -53,10 +54,11 @@ export const ContactUs = () => {
         />
       </div>
       <div className="contactform__item">
-        <label>
+        <label htmlFor="firstname">
           Prénom <span className="invalid">Champ invalide</span>
         </label>
         <input
+          id="firstname"
           type="text"
           name="user_firstname"
           autoComplete="given-name"
@@ -64,10 +66,11 @@ export const ContactUs = () => {
         />
       </div>
       <div className="contactform__item">
-        <label>
+        <label htmlFor="email">
           Email <span className="invalid">Champ invalide</span>
         </label>
         <input
+          id="email"
           type="email"
           name="user_email"
           autoComplete="email"
@@ -76,10 +79,10 @@ export const ContactUs = () => {
         />
       </div>
       <div className="contactform__item">
-        <label>
+        <label htmlFor="message">
           Message <span className="invalid">Champ invalide</span>
         </label>
-        <textarea name="message" required />
+        <textarea id="message" name="message" required />
       </div>
       <input type="submit" value={confirmMessage} className={confirmClass} />
     </form>
