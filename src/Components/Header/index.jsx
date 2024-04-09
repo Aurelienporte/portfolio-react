@@ -5,7 +5,7 @@ function Header({ state, toogleMenu }) {
   const overlayHeight = window
     .getComputedStyle(document.querySelector("body"))
     .getPropertyValue("height");
-  console.log(overlayHeight);
+
   return (
     <>
       <header>

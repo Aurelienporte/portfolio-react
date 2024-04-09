@@ -2,7 +2,9 @@ import Header from "../Components/Header";
 import SectionWrapper from "../Components/SectionWrapper";
 import Card from "../Components/Card";
 import Skill from "../Components/Skill";
+import ListItem from "../Components/ListItem/index.jsx";
 import Footer from "../Components/Footer";
+import { ContactUs } from "../Components/ContactForm/index.jsx";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
@@ -116,31 +118,24 @@ function Home() {
           title="Formation"
           listClass="education__list"
         >
-          <li className="school">
-            <p className="school__category">Web</p>
-            <h3 className="school__name">Openclassrooms</h3>
-            <p className="school__option">Parcours Intégrateur web</p>
-          </li>
-          <li className="school">
-            <p className="school__category">Artistique</p>
-            <h3 className="school__name">
-              &Eacute;cole des beaux-arts de Cergy
-            </h3>
-            <p className="school__option">Parcours art contemporain</p>
-          </li>
+          <ListItem label="Web" title="Openclassrooms">
+            <p>Parcours Intégrateur web</p>
+          </ListItem>
+          <ListItem
+            label="Artistique"
+            title="&Eacute;cole des beaux-arts de Cergy"
+          >
+            <p>Parcours art contemporain</p>
+          </ListItem>
         </SectionWrapper>
         <SectionWrapper id="contact" title="Contact" listClass="contact__list">
-          <li className="contact">
-            <p className="contact__text">Me contacter</p>
-            <h3 className="contact__title">Par e-mail</h3>
+          <ListItem label="Me contacter" title="Par e-mail">
             <a href="mailto:@aurel.porte@gmail.com" className="contact__mail">
               <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>
               Envoyer un message
             </a>
-          </li>
-          <li className="contact">
-            <p className="contact__text">Me retrouver</p>
-            <h3 className="contact__title">Sur les réseaux</h3>
+          </ListItem>
+          <ListItem label="Me retrouver" title="Sur les réseaux">
             <ul className="contact__socials-list">
               <li>
                 <a
@@ -167,7 +162,10 @@ function Home() {
                 </a>
               </li>
             </ul>
-          </li>
+          </ListItem>
+          <ListItem label="M'écrire" title="Via le formulaire">
+            <ContactUs></ContactUs>
+          </ListItem>
         </SectionWrapper>
       </main>
       <Footer></Footer>

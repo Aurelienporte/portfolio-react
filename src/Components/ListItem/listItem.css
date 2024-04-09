@@ -1,0 +1,14 @@
+.list-item{
+    font-size: 1.4rem;
+    
+    & .list-item__small-text{
+        margin-bottom: 4px;
+        font-weight: 400;
+        font-size: .9rem;
+    }
+    & .list-item__title{
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 16px;
+    }
+}

@@ -132,28 +132,28 @@
         font-size: .9rem;
         text-wrap: pretty;
     }
-    & .links{
-        display: flex;
-        gap: 2rem;
-        text-transform: uppercase;
+}
+& .links{
+    display: flex;
+    gap: 2rem;
+    text-transform: uppercase;
 
-        & .links__a{
-            padding: 5px 0;
-            color: black;
-            text-decoration: underline;
-            text-underline-offset: 3px;
-            font-size: .9rem;
-            transition: all 300ms ease;
+    & .links__a{
+        padding: 5px 0;
+        color: black;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        font-size: .9rem;
+        transition: all 300ms ease;
 
-            &:hover{
-                color: var(--salienceColor);
-                text-decoration-thickness: 2px;
-            }
+        &:hover{
+            color: var(--salienceColor);
+            text-decoration-thickness: 2px;
         }
     }
-    & .tools__title{
-        margin-bottom: 8px;
-    }
+}
+& .tools__title{
+    margin-bottom: 8px;
 }
 .tools__icon-container{
     display: flex;

@@ -44,11 +44,11 @@
         ],
         "links":[{
             "name":"visiter le site",
-            "url" :""
+            "url" :"https://aurelienporte.github.io/ohmyfood/index.html"
         },
         {
             "name":"voir le code",
-            "url" :""
+            "url" :"https://github.com/Aurelienporte/ohmyfood"
         }],
         "languages": ["html", "sass"]
     },
@@ -67,7 +67,7 @@
         },
         {
             "name":"voir le code",
-            "url" :""
+            "url" :"https://github.com/Aurelienporte/projet_6"
         }],
         "languages": ["html", "css", "javascript"]
     },
@@ -86,7 +86,7 @@
         },
         {
             "name":"voir le code",
-            "url" :""
+            "url" :"https://github.com/Aurelienporte/kasa"
         }],
         "languages": ["react", "sass"]
     },
@@ -101,11 +101,11 @@
         ],
         "links":[{
             "name":"visiter le site",
-            "url" :""
+            "url" :"https://aurelienporte.github.io/oc_p9_nina_carducci/"
         },
         {
             "name":"voir le code",
-            "url" :""
+            "url" :"https://github.com/Aurelienporte/oc_p9_nina_carducci"
         }],
         "languages": ["html", "css", "javascript"]
     },
@@ -124,7 +124,7 @@
         },
         {
             "name":"voir le code",
-            "url" :""
+            "url" :"https://github.com/Aurelienporte/ArgentBank-website/tree/main/argentbank"
         }],
         "languages": ["react", "css", "javascript"]
     },
@@ -142,7 +142,7 @@
         },
         {
             "name":"voir le code",
-            "url" :""
+            "url" :"https://github.com/Aurelienporte/portfolio-react"
         }],
         "languages": ["html", "css", "javascript"]
     }

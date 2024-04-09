@@ -52,9 +52,11 @@ function Card({
           <div className="links">
             {links.map((link) => {
               return (
-                <a href={link.url} className="links__a" key={link.url}>
-                  {link.name}
-                </a>
+                link.url !== "" && (
+                  <a href={link.url} className="links__a" key={link.url}>
+                    {link.name}
+                  </a>
+                )
               );
             })}
           </div>
