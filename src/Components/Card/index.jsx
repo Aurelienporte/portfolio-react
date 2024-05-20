@@ -36,6 +36,17 @@ function Card({
   return (
     <li className="projects__card" tabIndex={0}>
       <div
+        className="front"
+        style={{
+          background: `linear-gradient(rgb(0,0,0,.1), rgb(0,0,0,0.8)), url(${cover}) ${position} / cover no-repeat, cadetblue`,
+        }}
+      >
+        <div className="front__caption foreground">
+          <h3 className="front__title">{frontTitle}</h3>
+          <h4 className="front__subtitle">{subtitle}</h4>
+        </div>
+      </div>
+      <div
         className="back"
         style={{
           background: `linear-gradient(rgb(0,0,0,.1), rgb(0,0,0,0.1)),
@@ -81,17 +92,6 @@ function Card({
               })}
             </div>
           </div>
-        </div>
-      </div>
-      <div
-        className="front"
-        style={{
-          background: `linear-gradient(rgb(0,0,0,.1), rgb(0,0,0,0.8)), url(${cover}) ${position} / cover no-repeat, cadetblue`,
-        }}
-      >
-        <div className="front__caption foreground">
-          <h3 className="front__title">{frontTitle}</h3>
-          <h4 className="front__subtitle">{subtitle}</h4>
         </div>
       </div>
     </li>

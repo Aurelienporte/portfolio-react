@@ -25,11 +25,11 @@
         ],
         "links":[{
             "name":"visiter le site",
-            "url" :""
+            "url" :"https://aurelienporte.github.io/booki/"
         },
         {
             "name":"voir le code",
-            "url" :""
+            "url" :"https://github.com/Aurelienporte/booki"
         }],
         "languages": ["html", "css"]
     },
@@ -144,7 +144,7 @@
             "name":"voir le code",
             "url" :"https://github.com/Aurelienporte/portfolio-react"
         }],
-        "languages": ["html", "css", "javascript"]
+        "languages": ["react", "css"]
     }
 ]
 export default projects

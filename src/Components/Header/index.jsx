@@ -1,4 +1,5 @@
 import "./header.css";
+import cv from "../../assets/aurelien_porte_cv.pdf";
 
 function Header({ state, toogleMenu }) {
   const isDisplayed = state;
@@ -104,6 +105,18 @@ function Header({ state, toogleMenu }) {
               onClick={toogleMenu}
             >
               Contact
+            </a>
+          </li>
+          <li role="none">
+            <a
+              className="menu__link"
+              href={cv}
+              download="aurelien_porte_cv.pdf"
+              type="application/pdf"
+              role="menuitem"
+              onClick={toogleMenu}
+            >
+              Télécharger mon CV
             </a>
           </li>
         </ul>
